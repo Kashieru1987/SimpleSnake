@@ -2,13 +2,15 @@ package xyz.chronoziel.SimpleSnake;
 
 import javax.swing.SwingUtilities;
 
+import xyz.chronoziel.SimpleSnake.SnakeEngine.SnakeEngine;
+
 public class Main {
 
 	public Main() {
 		SwingUtilities.invokeLater(() -> {
 			try {
 
-				//time to do the coding funny
+				SnakeEngine.getInstance();
 
 			} catch (Exception e) {
 				e.printStackTrace();
