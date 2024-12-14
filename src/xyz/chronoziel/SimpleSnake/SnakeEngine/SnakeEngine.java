@@ -10,8 +10,6 @@ public class SnakeEngine {
 	private SnakeEngine() {
 		snakeFrame = new MainFrame();
 
-
-
 		snakeFrame.setVisible(true);
 	}
 
