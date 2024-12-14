@@ -1,18 +1,25 @@
 package xyz.chronoziel.SimpleSnake.SnakeEngine.Frame;
 
 import javax.swing.JFrame;
+import javax.swing.JSplitPane;
 
 import xyz.chronoziel.SimpleSnake.SnakeEngine.EngineConfig;
 
-public class SnakeFrame extends JFrame {
+public class MainFrame extends JFrame {
 
 	/**
 	 * 
 	 */
 	private static final long serialVersionUID = -5533038637139609033L;
 
-	public SnakeFrame() {
+	public MainFrame() {
 		this.init();
+
+		
+
+		JSplitPane splitPane = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT);
+
+		this.add(splitPane);
 	}
 
 	public void init() {

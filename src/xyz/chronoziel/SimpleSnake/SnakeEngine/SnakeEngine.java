@@ -1,14 +1,14 @@
 package xyz.chronoziel.SimpleSnake.SnakeEngine;
 
-import xyz.chronoziel.SimpleSnake.SnakeEngine.Frame.SnakeFrame;
+import xyz.chronoziel.SimpleSnake.SnakeEngine.Frame.MainFrame;
 
 public class SnakeEngine {
 
 	private volatile static SnakeEngine instance;
-	private SnakeFrame snakeFrame;
+	private MainFrame snakeFrame;
 
 	private SnakeEngine() {
-		snakeFrame = new SnakeFrame();
+		snakeFrame = new MainFrame();
 
 
 
