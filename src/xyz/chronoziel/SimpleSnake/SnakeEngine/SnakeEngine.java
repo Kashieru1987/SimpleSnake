@@ -1,6 +1,8 @@
 package xyz.chronoziel.SimpleSnake.SnakeEngine;
 
+import xyz.chronoziel.SimpleSnake.SnakeEngine.Frame.GamePanel;
 import xyz.chronoziel.SimpleSnake.SnakeEngine.Frame.MainFrame;
+import xyz.chronoziel.SimpleSnake.SnakeEngine.Frame.Painter;
 
 public class SnakeEngine {
 
@@ -9,7 +11,6 @@ public class SnakeEngine {
 
 	private SnakeEngine() {
 		snakeFrame = new MainFrame();
-
 		snakeFrame.setVisible(true);
 	}
 
