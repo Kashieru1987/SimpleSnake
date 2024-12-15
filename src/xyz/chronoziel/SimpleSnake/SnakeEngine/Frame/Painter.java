@@ -14,10 +14,19 @@ public class Painter {
 	public List<Consumer<Graphics2D>> getPaintList() {
 		List<Consumer<Graphics2D>> paintList = new ArrayList<Consumer<Graphics2D>>();
 
-		paintList.add(this::drawExample);
+//		paintList.add(this::Board);
+//		paintList.add(this::Snake);
+
+		paintList.add(this::drawExample); // TEMP
 
 		return paintList;
 	}
+
+//	public void Board(Graphics2D g2) {
+//	}
+
+//	public void Snake(Graphics2D g2) {
+//	}
 
 	public void drawExample(Graphics2D g2) {
 		g2.setColor(Color.red);

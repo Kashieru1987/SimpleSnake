@@ -9,13 +9,8 @@ import javax.swing.JPanel;
 
 import xyz.chronoziel.SimpleSnake.SnakeEngine.EngineConfig;
 
+@SuppressWarnings("serial")
 public class GamePanel extends JPanel {
-
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = -8337622817837531561L;
-
 
 	private final List<Consumer<Graphics2D>> paintList;
 
