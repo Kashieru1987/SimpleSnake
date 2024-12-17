@@ -26,7 +26,7 @@ public class MainFrame extends JFrame {
 		OptionScrollPane optionScrollPane = new OptionScrollPane();
 
 		JSplitPane splitPane = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT, gamePanel, optionScrollPane);
-		splitPane.setDividerLocation(600);
+		splitPane.setDividerLocation(EngineConfig.GAME_PANEL_WIDTH);
 		splitPane.setEnabled(false);
 		return splitPane;
 	}

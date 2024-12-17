@@ -12,4 +12,8 @@ public class EngineConfig {
 	public static final Dimension SIZE = new Dimension(800, 600);
 	public static final Color GAME_BACKGROUND_COLOR = Color.BLACK;
 
+	public static final int GAME_PANEL_WIDTH = 600;
+
+	public static final int BOARD_SIZE = 10;
+
 }
