@@ -1,5 +1,8 @@
 package xyz.chronoziel.SimpleSnake.SnakeEngine.Frame;
 
+import java.awt.Dimension;
+import java.awt.Insets;
+
 import javax.swing.JFrame;
 import javax.swing.JSplitPane;
 
@@ -15,10 +18,23 @@ public class MainFrame extends JFrame {
 	}
 
 	public void init() {
+		this.setVisible(true); //needs to be visible for calculations, such as insets
+
 		this.setTitle(EngineConfig.TITLE);
 		this.setSize(EngineConfig.SIZE);
 		this.setLocationRelativeTo(null);
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+		this.setVisible(true);
+	}
+
+	@Override
+	public void setSize(Dimension inputSize) {
+		Insets insets = this.getInsets();
+		final int width = inputSize.width + insets.left + insets.right;
+		final int height = inputSize.height + insets.top + insets.bottom;
+
+		super.setSize(width, height);
 	}
 
 	public JSplitPane createSplitPane() {
