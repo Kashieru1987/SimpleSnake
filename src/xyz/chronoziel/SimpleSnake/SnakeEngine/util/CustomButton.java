@@ -6,6 +6,7 @@ import java.awt.event.ActionListener;
 
 import javax.swing.JButton;
 
+@SuppressWarnings("serial")
 public class CustomButton extends JButton {
 
 	public CustomButton(String text) {
