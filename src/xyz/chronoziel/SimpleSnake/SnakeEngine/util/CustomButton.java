@@ -1,5 +1,6 @@
 package xyz.chronoziel.SimpleSnake.SnakeEngine.util;
 
+import java.awt.Component;
 import java.awt.Dimension;
 import java.awt.event.ActionListener;
 
@@ -24,6 +25,7 @@ public class CustomButton extends JButton {
 	public void initCustomButton() {
 		this.setFocusable(false);
 		this.setMaximumSize(new Dimension(Integer.MAX_VALUE, this.getMaximumSize().height));
+		this.setAlignmentX(Component.CENTER_ALIGNMENT);
 	}
 
 }
