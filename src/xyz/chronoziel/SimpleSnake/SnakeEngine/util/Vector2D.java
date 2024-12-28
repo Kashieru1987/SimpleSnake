@@ -14,6 +14,12 @@ public class Vector2D {
 		this.y= y;
 	}
 
+	public Vector2D add(final Vector2D input) {
+		this.x += input.x;
+		this.y += input.y;
+		return this;
+	}
+
 	public int getX() {
 		return this.x;
 	}
