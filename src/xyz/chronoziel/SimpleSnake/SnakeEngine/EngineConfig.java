@@ -15,5 +15,6 @@ public class EngineConfig {
 	public static final int GAME_PANEL_WIDTH = 600;
 
 	public static final int BOARD_SIZE = 10;
+	public static final Color SNAKE_COLOR = Color.GREEN;
 
 }
